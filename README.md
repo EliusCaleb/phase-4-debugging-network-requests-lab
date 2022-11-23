@@ -63,11 +63,18 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  The  error was  in the the toy = Toys.create(toy_params) which was suppose to be toy = Toy.create(toy_params) for create action
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  The error is that the #<ActionController::Parameters {"likes"=>15, "controller"=>"toys", "action"=>"update", "id"=>"2"} permitted: false> using byebug the  request  is  suppose to be a JSON type 
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  The error is ActionController::RoutingError (No route matches [DELETE] "/toys/6"):
+  there is no  routes for destroy in route.rb
+   In route.rb I added   destroy action 
+
+  added error for toys not found 
