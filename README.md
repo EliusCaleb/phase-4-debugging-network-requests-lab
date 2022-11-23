@@ -69,6 +69,7 @@ developing your own process.
 
   - How I debugged:
   The error is that the #<ActionController::Parameters {"likes"=>15, "controller"=>"toys", "action"=>"update", "id"=>"2"} permitted: false> using byebug the  request  is  suppose to be a JSON type 
+  so I updated the action to render JSON
 
 - Donate a toy to Goodwill (and delete it from our database)
 
